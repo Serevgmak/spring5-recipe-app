@@ -1,12 +1,9 @@
 package guru.springframework.domain;
 
-import java.math.BigDecimal;
-
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
-import javax.persistence.OneToOne;
 
 @Entity
 public class UnitOfMeasure {
@@ -16,10 +13,10 @@ public class UnitOfMeasure {
 	Long id;
 
 	private String description;
-	private BigDecimal amount;
+//	private BigDecimal amount;
 
-	@OneToOne
-	private Ingredient ingredient;
+//	@OneToOne
+//	private Ingredient ingredient;
 
 	public Long getId() {
 		return id;
@@ -37,20 +34,20 @@ public class UnitOfMeasure {
 		this.description = description;
 	}
 
-	public BigDecimal getAmount() {
-		return amount;
-	}
+//	public BigDecimal getAmount() {
+//		return amount;
+//	}
+//
+//	public void setAmount(BigDecimal amount) {
+//		this.amount = amount;
+//	}
 
-	public void setAmount(BigDecimal amount) {
-		this.amount = amount;
-	}
-
-	public Ingredient getIngredient() {
-		return ingredient;
-	}
-
-	public void setIngredient(Ingredient ingredient) {
-		this.ingredient = ingredient;
-	}
+//	public Ingredient getIngredient() {
+//		return ingredient;
+//	}
+//
+//	public void setIngredient(Ingredient ingredient) {
+//		this.ingredient = ingredient;
+//	}
 
 }
