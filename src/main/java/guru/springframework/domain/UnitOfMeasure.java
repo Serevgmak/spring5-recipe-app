@@ -5,6 +5,9 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
+import lombok.Data;
+
+@Data
 @Entity
 public class UnitOfMeasure {
 
@@ -17,23 +20,23 @@ public class UnitOfMeasure {
 
 //	@OneToOne
 //	private Ingredient ingredient;
-
-	public Long getId() {
-		return id;
-	}
-
-	public void setId(Long id) {
-		this.id = id;
-	}
-
-	public String getDescription() {
-		return description;
-	}
-
-	public void setDescription(String description) {
-		this.description = description;
-	}
-
+//
+//	public Long getId() {
+//		return id;
+//	}
+//
+//	public void setId(Long id) {
+//		this.id = id;
+//	}
+//
+//	public String getDescription() {
+//		return description;
+//	}
+//
+//	public void setDescription(String description) {
+//		this.description = description;
+//	}
+//
 //	public BigDecimal getAmount() {
 //		return amount;
 //	}
@@ -41,7 +44,7 @@ public class UnitOfMeasure {
 //	public void setAmount(BigDecimal amount) {
 //		this.amount = amount;
 //	}
-
+//
 //	public Ingredient getIngredient() {
 //		return ingredient;
 //	}
